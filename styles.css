@@ -1,0 +1,133 @@
+body{
+    background-color:#f76d86 ;
+}
+h1{
+    background-color: rgb(155, 109, 137);
+    border-radius: 140%;
+    color: blanchedalmond;
+}
+#ear-container{
+    position: absolute;
+    /*border: 1px solid black;*/
+    height: 90px;
+    width: 90px;
+    top: 190px;
+    right:450px;
+ }
+
+ #left-ear,#right-ear{
+    position: absolute;
+    border:  5px solid black;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color:palevioletred ;
+ }
+ #right-ear{
+    right:370px;
+    transition: transform 1.5s ease-in-out;
+ }
+ #left-ear{
+    left:5px;
+    transition: transform 1.5s ease-in-out;
+ }
+ #face{
+    border: 5px solid black;
+    height:400px;
+    width:400px;
+    border-radius: 250px;
+    background-color:#faa29d ;
+   
+}
+#eye-container{
+    /*border: solid ;color: black;*/
+    position: absolute;
+    height:190px;
+    width: 300px;;
+    left: 480px;
+    top: 170px;
+}
+#right-eye, #left-eye{
+    position: absolute;
+    border: 3px solid;color: black;
+    height: 100px;
+    width:100px;
+    border-radius:100%;
+    top: 90px;
+    left:50px;
+    background-color: white;
+    
+}
+#right-eye{
+    left: 250px;
+    transition: transform 1.5s ease-in-out;
+}
+#left-eye{
+    transition: transform 1.5s ease-in-out;
+}
+#right-eye::before,#left-eye::before{
+    content:"";
+    position: absolute;
+    border: 1px solid;color:black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    left: 30px;
+    top:30px;
+
+}
+ #mouth{
+    position: absolute;
+    border:3px solid black;
+    height: 100px;
+    width:200px ;
+    background-color:palevioletred;
+    top: 410px;
+    left:580px;
+    border-radius: 40px 40px 40px 40px;
+    
+ }
+ #hole-container{
+    position: absolute;
+    /*border: 2px solid black;*/
+    height: 50px;
+    width: 130px;
+    top: 440px;
+    left: 585px;
+ }
+ #right-hole,#left-hole{
+    position: absolute;
+    border:1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    left:20px;
+ }
+ #right-hole{
+    left: 120px;
+    transition: transform 1.5s ease-in-out;
+ }
+ #left-hole{
+    transition: transform 1.5s ease-in-out;
+ }
+
+#right-eye:hover{
+    transform: scale(0);
+}
+#left-eye:hover{
+    transform: scale(0);
+}
+#right-ear:hover{
+    transform: sacle(0);
+}
+#left-ear:hover{
+    transform: scale(0);
+}
+#left-hole:hover{
+    transform: scale(0);
+}
+#right-hole:hover{
+    transform: scale(0)
+}
